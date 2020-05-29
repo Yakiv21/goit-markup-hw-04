@@ -94,6 +94,10 @@ body {
     margin-bottom: 30px;
 }
 
+.product {
+    display: block;
+}
+
 .card-portfolio {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -117,6 +121,16 @@ body {
 
 .feature-list .item-portfolio:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.product:hover,
+.product:focus {
+    box-shadow: 1px 4px 6px
+    rgba(0, 0, 0, 0.16),
+    0px 4px 4px
+  rgba(0, 0, 0, 0.06),
+   0px 1px 1px
+ rgba(0, 0, 0, 0.12);
 }
 
 .section-title-portfolio {
@@ -159,50 +173,3 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-    /*FOOTER*/
-/*
-.footer {
-    background-color: #2F303A;
-}
-
-.address-footer {
-    padding-right: 180px;
-    padding-top: 48px;
-}
-
-.social-company {
-    display: flex;
-}
-.join {
-    padding-right: 100px;
-    padding-top: 56px;
-}
-.subscription {
-    display: flex;
-    padding-top: 56px;
-}
-
-.container-footer {
-    display: flex;
-    align-items: center;
-}
-
-.address-list {
-    display: block;
-}
-
-.text-address {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 21px;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.03em;
-}*/
-
