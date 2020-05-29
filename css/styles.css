@@ -19,6 +19,7 @@
   --bg-team-color: #f5f4fa;
   --bg-hero-color: rgba(47, 48, 58, 0.8);
   --social-color: #AFB1B8;
+  --social-footer-color: #44454E;
 }
 
 body {
@@ -320,6 +321,10 @@ img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   overflow: hidden;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+   0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
@@ -363,9 +368,9 @@ img {
   display: flex;
 }
 
-.icon-link {
-    fill: var(--social-color);
-}
+/*.icon-link {
+    fill: currentColor;
+}*/
 
 .social-link {
     display: flex;
@@ -395,13 +400,39 @@ img {
   display: flex;
   justify-content: space-between;
 }
-/*.clients .item-company:not(:last-child) {
-    margin-right: 30px;
+
+.clients-link {
+    /*display: block;*/
+    display: flex;
+    width: 170px;
+    height: 90px;
+
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/*.item-company {
+    display: flex;
+    width: 170px;
+    height: 90px;
+
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
 }*/
 
-.clients .clients-link:hover,
-.clients .clients-link:focus {
-  color: var(--accent-color);
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Футтер*/
@@ -413,10 +444,12 @@ img {
 }
 
 .call {
+    display: block;
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 21px;
 }
 
 .subscribe {
@@ -425,13 +458,35 @@ img {
   min-height: 50px;
 }
 
-.social-company .company-link:hover,
-.social-company .company-link:focus {
-  color: var(--accent-color);
+.company-link {
+    display: flex;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--social-footer-color);
+
+    justify-content: center;
+    align-items: center;
 }
 
-/*FOOTER*/
+.social-footer-item:not(:last-child) {
+    margin-right: 10px;
+}
 
+.icon-footer {
+    fill: var(--white-color);
+}
+
+.social-company .company-link:hover,
+.social-company .company-link:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-send {
+    justify-content: center;
+    align-items: center;
+}
 .footer {
   background-color: #2f303a;
 }
