@@ -152,11 +152,15 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 .icon {
+    display: block;
     fill: currentColor;
-    /*margin-right: 10px;*/
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .address .address-link:hover,
