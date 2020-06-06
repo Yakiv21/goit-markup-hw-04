@@ -22,6 +22,7 @@
   --social-footer-color: #44454E;
 }
 
+
 body {
   background-color: var(--white-color);
   color: var(--primery-text-color);
@@ -305,6 +306,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  background-color: var(--bg-hero-color);
 
   margin-top: 0;
   margin-bottom: 0;
@@ -441,6 +443,7 @@ img {
 .footer-address {
   color: var(--footer-text-color);
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
 }
 
@@ -528,6 +531,7 @@ img {
 
 .text-address {
   color: var(--white-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 
